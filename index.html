@@ -69,7 +69,9 @@
       rel="preload"
       as="style"
       type="text/css"
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      href="assets/fonts/quicksand-local.css"
+      rel="stylesheet"
+    />
     />    <!--------------------------------------------------------------------------------------------------->
     <link
       href="assets/css/header.scss.css"
@@ -132,24 +134,8 @@
         );
     </script>
     <script>
-      (function () {
-        function asyncLoad() {
-          var urls = [
-            "//productreviews.sapoapps.vn/assets/js/productreviews.min.js?store=template-rose-homestay.mysapo.net",
-          ];
-          for (var i = 0; i < urls.length; i++) {
-            var s = document.createElement("script");
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = urls[i];
-            var x = document.getElementsByTagName("script")[0];
-            x.parentNode.insertBefore(s, x);
-          }
-        }
-        window.attachEvent
-          ? window.attachEvent("onload", asyncLoad)
-          : window.addEventListener("load", asyncLoad, false);
-      })();
+      // Product reviews script đã được loại bỏ để website hoạt động offline
+      console.log('Product reviews feature disabled for offline mode');
     </script>
 
     <script>
@@ -165,7 +151,8 @@
       }
     </script>
 
-    <script src="/dist/js/stats.min.js?v=96f2ff2"></script>
+    <!-- <script src="/dist/js/stats.min.js?v=96f2ff2"></script> -->
+    <!-- Analytics script đã được loại bỏ để website hoạt động offline -->
 
     <script>
       $(document).ready(function ($) {
@@ -483,20 +470,7 @@
                       id="Token-9b3e21c2ce18462a97448aff06d20f8b"
                       name="Token"
                     />
-                    <script src="https://www.google.com/recaptcha/api.js?render=6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK"></script>
-                    <script>
-                      grecaptcha.ready(function () {
-                        grecaptcha
-                          .execute("6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK", {
-                            action: "contact",
-                          })
-                          .then(function (token) {
-                            document.getElementById(
-                              "Token-9b3e21c2ce18462a97448aff06d20f8b"
-                            ).value = token;
-                          });
-                      });
-                    </script>
+                    <!-- reCAPTCHA đã được loại bỏ để website hoạt động offline -->
 
                     <div class="form_book_room form_book_room_index">
                       <div class="oder_form">
@@ -544,8 +518,7 @@
                               >
                                 <div class="social-media" data-permalink="">
                                   <a
-                                    target="_blank"
-                                    href="//twitter.com/share?text=&amp;url="
+                                    href="#"
                                     class="share-twitter"
                                     title="Chia sẻ lên Twitter"
                                   >
@@ -568,8 +541,7 @@
                                   </a>
 
                                   <a
-                                    target="_blank"
-                                    href="//www.facebook.com/sharer.php?u="
+                                    href="#"
                                     class="share-facebook"
                                     title="Chia sẻ lên Facebook"
                                   >
@@ -593,8 +565,7 @@
                                   </a>
 
                                   <a
-                                    target="_blank"
-                                    href="//plus.google.com/share?url="
+                                    href="#"
                                     class="share-google"
                                     title="+1"
                                   >
@@ -1020,10 +991,10 @@
     </section>
 
     <section class="awe-section-3">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+      <script src="assets/js/fancybox.min.js"></script>
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"
+        href="assets/css/fancybox.min.css"
       />
       <section id="hinhanh" class="section_gallery">
         <div class="container">
@@ -1687,13 +1658,12 @@
                         <div class="qv"></div>
                         <img
                           class="lazyload"
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                          data-src="assets/images/feedback_1.png"
+                          data-src="assets/images/images (3).jpg"
                           alt="Rose HomeStay"
                         />
                       </div>
                       <div class="right_name">
-                        <span class="name_author">Mr: Minh Nguyễn</span>
+                        <span class="name_author">Mr: Quân</span>
                         <svg
                           width="16px"
                           height="16px"
@@ -1803,13 +1773,12 @@
                         <div class="qv"></div>
                         <img
                           class="lazyload"
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                          data-src="assets/images/feedback_2.png"
+                          data-src="assets/images/images (2).jpg"
                           alt="Rose HomeStay"
                         />
                       </div>
                       <div class="right_name">
-                        <span class="name_author">Mrs: Thương Đào</span>
+                        <span class="name_author">Mrs: Lyly</span>
                         <svg
                           width="16px"
                           height="16px"
@@ -1919,13 +1888,13 @@
                         <div class="qv"></div>
                         <img
                           class="lazyload"
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                          data-src="assets/images/feedback_3.png"
+                         
+                          data-src="assets/images/images (1).jpg"
                           alt="Rose HomeStay"
                         />
                       </div>
                       <div class="right_name">
-                        <span class="name_author">Mr: Đông Nguyễn</span>
+                        <span class="name_author">Mr: Sơn Tùng MTP</span>
                         <svg
                           width="16px"
                           height="16px"
@@ -2035,13 +2004,12 @@
                         <div class="qv"></div>
                         <img
                           class="lazyload"
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
-                          data-src="assets/images/feedback_4.png"
+                          data-src="assets/images/images.jpg"
                           alt="Rose HomeStay"
                         />
                       </div>
                       <div class="right_name">
-                        <span class="name_author">Mr: Khá Nguyễn</span>
+                        <span class="name_author">Mr: J97</span>
                         <svg
                           width="16px"
                           height="16px"
@@ -2732,17 +2700,15 @@
                     </script>
                     <div
                       class="fb-page"
-                      data-href="https://www.facebook.com/Facebook/"
+                      data-href="#"
                       data-height="200"
                       data-adapt-container-width="true"
                       data-hide-cover="false"
                       data-show-facepile="false"
                     >
                       <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/Facebook/">
-                          <a href="https://www.facebook.com/Facebook/"
-                            >Facebook</a
-                          >
+                        <blockquote>
+                          <p>Fanpage Facebook không khả dụng khi offline</p>
                         </blockquote>
                       </div>
                     </div>
@@ -2796,7 +2762,7 @@
                     </svg>
                   </div>
                   <div class="list_footer">
-                    <a href="mailto:support@sapo.vn">support@sapo.vn</a>
+                    <a href="mailto:rosehomestay@email.com">rosehomestay@email.com</a>
                   </div>
                 </div>
                 <div class="content-contact clearfix">
@@ -3025,11 +2991,11 @@
                 <span class="opacity1">Cung cấp bởi</span>
 
                 <a
-                  href="https://www.sapo.vn/?utm_campaign=cpn:kho_theme-plm:footer&utm_source=Tu_nhien&utm_medium=referral&utm_content=fm:text_link-km:-sz:&utm_term=&campaign=kho_theme-sapo"
+                  href="#"
                   rel="nofollow"
-                  title="Sapo"
+                  title="Rose HomeStay"
                   target="_blank"
-                  >Sapo</a
+                  >Rose HomeStay</a
                 >
               </span>
             </div>
@@ -3707,9 +3673,9 @@
     ></script>
     <link
       rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+      href="assets/css/jquery-ui.min.css"
     />
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script type="text/x-custom-template" data-template="ItemDropCart">
       <li class="item productid-${id_item}">
       	<div class="border_list"><div class="image_drop">
@@ -4721,11 +4687,6 @@
       });
     </script>
     <div id="popupCartModal" class="modal fade" role="dialog"></div>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="assets/fonts/quicksand-local.css" rel="stylesheet" />
   </body>
 </html>
