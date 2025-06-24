@@ -481,7 +481,7 @@ $('a[href*="#"]:not([href="#"])').on("click", function () {
         {
           scrollTop: target.offset().top - 150,
         },
-        1000
+        400
       );
       return false;
     }
