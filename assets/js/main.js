@@ -9,6 +9,16 @@ $(document).ready(function ($) {
   awe_category();
   awe_tab();
 
+  // Cập nhật tất cả các liên kết trong footer để sử dụng anchor (chỉ sử dụng #section thay vì /#section)
+  $('.footer a[href^="/#"]').each(function() {
+    var href = $(this).attr('href');
+    $(this).attr('href', href.replace('/#', '#'));
+  });
+  
+  // Cập nhật liên kết Trang chủ và Tin tức trong footer
+  $('.footer a[href="/"]').attr('href', 'index.html');
+  $('.footer a[href="/tin-tuc"]').attr('href', 'tin-tuc.html');
+
   /*Modal gửi yêu cầu đặt phòng*/
 
   /*Modal gửi yêu cầu đặt phòng*/
