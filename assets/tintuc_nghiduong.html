@@ -3501,11 +3501,36 @@
           // Show beautiful success modal instead of alert
           showSuccessModal();
           
-          // Optional: Reset the form after showing the message
-          this.reset();
+          // Reset the form after showing the message
+          var form = this;
+          setTimeout(function() {
+            // Reset all form fields to their default values
+            form.reset();
+            
+            // Reset date pickers
+            $('.date_picker').val('').attr('startdate', '').attr('enddate', '');
+            
+            // Reset number of people field
+            $('.songuoi').val('');
+            
+            // Reset email field
+            $('.email').val('');
+            
+            // Reset the total price to default
+            var defaultPrice = $('.data_price').attr('data-default');
+            var defaultPriceFormatted = Bizweb.formatMoney(defaultPrice, "{{amount_no_decimals_with_comma_separator}}₫");
+            $('.textprice').html(defaultPriceFormatted);
+            $('.tt_price_val').attr('value', defaultPriceFormatted);
+            
+            // Clear any validation states
+            $(form).find('.is-invalid').removeClass('is-invalid');
+            $(form).find('.error-message').hide();
+            $(form).find('select').prop('selectedIndex', 0);
+            
+            console.log('Form has been completely reset successfully');
+          }, 100);
           
-          // Optional: Close the booking modal if it's open
-          $('#modal_request').hide();
+          // Keep the booking modal open so the form remains visible after submission
           
           return false;
         });
